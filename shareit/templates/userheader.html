@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="icon" href="{% static 'images/shareicon.png' %}" type="image/png" />
+
+<title>ShareIt</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery.dropotron-1.0.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.slidertron-1.1.js' %}"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#menu > ul').dropotron({
+			mode: 'fade',
+			globalOffsetY: 11,
+			offsetY: -15
+		});
+		// $('#slider').slidertron({
+		// 	viewerSelector: '.viewer',
+		// 	indicatorSelector: '.indicator span',
+		// 	reelSelector: '.reel',
+		// 	slidesSelector: '.slide',
+		// 	speed: 'slow',
+		// 	advanceDelay: 4000
+		// });
+	});
+</script>
+</head>
+<body>
+
+	<!--wrapper start-->
+<div id="wrapper">
+
+	<!--header start-->
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">ShareIt</a></h1>
+		</div>
+		<div id="slogan">
+			<h2>Welcome : {{sunm}} </h2>
+		</div>
+	</div>
